@@ -1,6 +1,6 @@
 <?php
 
-namespace Gaesi\Validators;
+namespace Gaesi\Validator;
 
 class CNPJ
 {
