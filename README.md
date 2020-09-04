@@ -5,17 +5,21 @@ A PHP library for General Validations.
 Validations:
  - Cpf;
  - Cnpj;
- - CEP;
  - GS1 (Gtin, Sscc, GtinWithSn);
  - Check digit (mod 10, mod 11 and mod 37) 
 
- ## Use
+ ## Usage
 
- ````
- use Gaesi\Validator;
+ ```` php
+<?php
 
- CPF::validate("12345678909");
- CNPJ::validate("12345678900109");
- GS1::validateGs1("1234567890123");
+use Gaesi\Validator\CPF;
+use Gaesi\Validator\GS1;
+use Gaesi\Validator\Mod11;
+
+CPF::validate("12345678909");      // return true
+GS1::validateGs1("1234567890123"); // return false
+Mod11::calcule("111222333");       // return "1112223339"
+Mod11::validate("1112223339");     // return true 
  ````
 

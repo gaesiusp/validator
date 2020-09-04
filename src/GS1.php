@@ -2,7 +2,7 @@
 
 namespace Gaesi\Validator;
 
-class Gs1
+class GS1
 {
     public static function validateGtin(string $gtin, int $length = 14): bool
     {
