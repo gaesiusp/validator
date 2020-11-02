@@ -1,6 +1,6 @@
 {
 	"name": "gaesi/validator",
-	"description": "Gaesi Validator lib.",
+	"description": "Gaesi Validator library",
 	"minimum-stability": "dev",
 	"license": "MIT",
 	"keywords": [
